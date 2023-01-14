@@ -1,0 +1,24 @@
+{
+  "name": "ohmyfood",
+  "version": "1.0.0",
+  "description": "Formation OC",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:./public/css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gcorbelin/ohmyfood.git"
+  },
+  "keywords": [
+    "css",
+    "scss",
+    "sass"
+  ],
+  "author": "gcorbelin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gcorbelin/ohmyfood/issues"
+  },
+  "homepage": "https://github.com/gcorbelin/ohmyfood#readme"
+}
