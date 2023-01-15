@@ -1,0 +1,112 @@
+.img-banner {
+  height: 258px;
+
+  &__img {
+    @include img-cover;
+  }
+}
+
+.menu {
+  $self: &;
+
+  position: relative;
+  margin-top: -1 * $border-radius-lg;
+  padding-top: 2rem;
+  padding-bottom: 2.5rem;
+  border-top-left-radius: $border-radius-lg;
+  border-top-right-radius: $border-radius-lg;
+  background-color: $surface-level-2;
+  z-index: 1;
+
+  &__title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    padding-right: 1.25rem;
+  }
+
+  &__subtitle {
+    font-size: 1rem;
+    font-weight: 400;
+    text-transform: uppercase;
+
+    &::after {
+      content: "";
+      display: block;
+      width: 2.5rem;
+      height: 3px;
+      margin-top: 0.125rem;
+      background-color: $tertiary-color;
+    }
+  }
+
+  &__section {
+    margin-top: 2rem;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    animation-name: fadeInUp;
+
+    @for $i from 0 through 2 {
+      &:nth-child(#{$i + 1}) {
+        $delay: $i * 0.45s;
+        animation-delay: $delay;
+
+        @for $j from 1 through 3 {
+          #{$self}__item:nth-child(#{$j}) {
+            animation-delay: $j * 0.15s + $delay;
+          }
+        }
+      }
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    margin-top: 0.75rem;
+  }
+
+  &__item {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    animation-name: fadeInUp;
+  }
+
+  &__order {
+    text-align: center;
+    margin-top: 2.5rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@-webkit-keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}

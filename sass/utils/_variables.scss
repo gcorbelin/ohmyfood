@@ -19,10 +19,11 @@ $line-height-base: calc(1em + 0.5rem);
 
 // Radius
 $border-radius: 14px;
+$border-radius-lg: 38px;
 $border-radius-full: 999rem;
 
 // Shadows
-$box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.102);
+$box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.1);
 
 // Breakpoints
 $breakpoints: (

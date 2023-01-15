@@ -1,3 +1,7 @@
 .container {
   @include container;
+  
+  &--alt {
+    @include container(1400px, .75rem);
+  }
 }

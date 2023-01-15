@@ -4,8 +4,8 @@
 @import "utils/mixins";
 
 // Base
-@import "base/reset"; 
-@import "base/base"; 
+@import "base/reset";
+@import "base/base";
 @import "base/typography";
 
 // Layout
@@ -17,6 +17,8 @@
 @import "components/btn";
 @import "components/badge";
 @import "components/card";
+@import "components/dish";
 
 // Pages
-@import "pages/home"
+@import "pages/home";
+@import "pages/restaurant";

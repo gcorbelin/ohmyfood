@@ -1,14 +1,59 @@
 .btn {
+  display: inline-block;
   padding: 0.75rem 1.25rem;
   border-radius: $border-radius-full;
   @include bg-gradient;
   box-shadow: $box-shadow;
   color: $text-color-level-4;
   font-weight: 700;
-  transition: background-color .3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
 
   &:hover,
   &:focus {
     background-color: $primary-color;
+  }
+}
+
+.btn-favorite {
+  $this: &;
+
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  padding: 0.25rem;
+  border: 0;
+  background: none;
+  font-size: 1.5rem;
+  text-align: center;
+  cursor: pointer;
+
+  &__heart {
+    transition: clip-path 0.5s ease-in-out;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+
+    #{$this}:hover & {
+      clip-path: polygon(0% 0%, 100% 0%, 100% 0%, 0% 0%);
+    }
+
+    &--filled {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      // Background color with gradient
+      @include bg-gradient;
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      // Filling up animation
+      clip-path: polygon(0% 100%, 100% 100%, 100% 100%, 100% 100%);
+
+      #{$this}:hover & {
+        clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+      }
+    }
   }
 }
