@@ -65,7 +65,7 @@
         $delay: $i * 0.45s;
         animation-delay: $delay;
 
-        @for $j from 1 through 3 {
+        @for $j from 1 through 4 {
           #{$self}__item:nth-child(#{$j}) {
             animation-delay: $j * 0.15s + $delay;
           }
