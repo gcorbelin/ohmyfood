@@ -10,13 +10,25 @@
   $self: &;
 
   position: relative;
+  flex-grow: 1;
   margin-top: -1 * $border-radius-lg;
   padding-top: 2rem;
   padding-bottom: 2.5rem;
   border-top-left-radius: $border-radius-lg;
   border-top-right-radius: $border-radius-lg;
   background-color: $surface-level-2;
+  overflow: hidden;
   z-index: 1;
+
+  &__wrapper {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2rem;
+
+    @media screen and (min-width: map-get($breakpoints, md)) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
 
   &__title {
     display: flex;
@@ -43,7 +55,7 @@
   }
 
   &__section {
-    margin-top: 2rem;
+    min-width: 0;
     animation-duration: 1s;
     animation-fill-mode: both;
     animation-name: fadeInUp;
@@ -76,6 +88,7 @@
   }
 
   &__order {
+    position: relative;
     text-align: center;
     margin-top: 2.5rem;
     margin-left: auto;
