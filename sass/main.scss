@@ -4,5 +4,19 @@
 @import "utils/mixins";
 
 // Base
-@import "base/reset";
+@import "base/reset"; 
+@import "base/base"; 
 @import "base/typography";
+
+// Layout
+@import "layout/common";
+@import "layout/header";
+@import "layout/footer";
+
+// Components
+@import "components/btn";
+@import "components/badge";
+@import "components/card";
+
+// Pages
+@import "pages/home"

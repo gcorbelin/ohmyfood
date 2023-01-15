@@ -1,0 +1,16 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  background-color: $surface-level-1;
+  color: $text-color-level-1;
+  font-size: $font-size-base;
+  font-family: $font-family-base; 
+}
+
+footer {
+  margin-top: auto;
+}

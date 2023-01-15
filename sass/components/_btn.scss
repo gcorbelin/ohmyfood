@@ -1,0 +1,14 @@
+.btn {
+  padding: 0.75rem 1.25rem;
+  border-radius: $border-radius-full;
+  @include bg-gradient;
+  box-shadow: $box-shadow;
+  color: $text-color-level-4;
+  font-weight: 700;
+  transition: background-color .3s ease-in-out;
+
+  &:hover,
+  &:focus {
+    background-color: $primary-color;
+  }
+}
