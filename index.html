@@ -8,18 +8,37 @@
 
     <title>Page d'accueil | Ohmyfood</title>
 
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="./assets/favicon/site.webmanifest">
+    <link rel="mask-icon" href="./assets/favicon/safari-pinned-tab.svg" color="#9356dc">
+    <link rel="shortcut icon" href="./assets/favicon/favicon.ico">
+    <meta name="msapplication-TileColor" content="#9356dc">
+    <meta name="msapplication-config" content="./assets/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Shrikhand&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Shrikhand&display=swap"
         rel="stylesheet">
     <!-- FontAwesome -->
     <script src="https://kit.fontawesome.com/86bab40cb3.js" crossorigin="anonymous"></script>
     <!-- Custom styles -->
-    <link rel="stylesheet" href="./public/css/style.css">
+    <link rel="stylesheet" href="./public/css/prefixed/style.css">
 </head>
 
 <body>
+    <div class="loader">
+        <div class="loader__overlay"></div>
+        <div class="loader__spinner">
+            <div class=loader__item></div>
+            <div class=loader__item></div>
+            <div class=loader__item></div>
+            <div class=loader__item></div>
+        </div>
+    </div>
     <header class="header">
         <img src="./assets/logo/ohmyfood@2x.svg" height="28" alt="Logo Ohmyfood" class="header__logo">
     </header>
@@ -59,8 +78,8 @@
                     <li class="restaurants__item">
                         <article class="card">
                             <div class="card__header">
-                                <img src="./assets/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" class="card__img"
-                                    alt="Salade de saumon fumé">
+                                <img src="./assets/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
+                                    class="card__img" alt="Salade de saumon fumé">
                                 <span class="card__badge badge">Nouveau</span>
                             </div>
                             <div class="card__body">
@@ -70,9 +89,12 @@
                                     </h3>
                                     <p class="card__content">Ménilmontant</p>
                                 </div>
-                                <button class="card__favorite btn-favorite" aria-label="Cliquez pour ajouter aux favoris">
-                                    <i class="fa-regular fa-heart btn-favorite__heart" role="img" aria-label="Coeur"></i>
-                                    <i class="fa fa-heart btn-favorite__heart btn-favorite__heart--filled" aria-hidden="true"></i>
+                                <button class="card__favorite btn-favorite"
+                                    aria-label="Cliquez pour ajouter aux favoris">
+                                    <i class="fa-regular fa-heart btn-favorite__heart" role="img"
+                                        aria-label="Coeur"></i>
+                                    <i class="fa fa-heart btn-favorite__heart btn-favorite__heart--filled"
+                                        aria-hidden="true"></i>
                                 </button>
                             </div>
                         </article>
@@ -91,9 +113,12 @@
                                     </h3>
                                     <p class="card__content">Charonne</p>
                                 </div>
-                                <button class="card__favorite btn-favorite" aria-label="Cliquez pour ajouter aux favoris">
-                                    <i class="fa-regular fa-heart btn-favorite__heart" role="img" aria-label="Coeur"></i>
-                                    <i class="fa fa-heart btn-favorite__heart btn-favorite__heart--filled" aria-hidden="true"></i>
+                                <button class="card__favorite btn-favorite"
+                                    aria-label="Cliquez pour ajouter aux favoris">
+                                    <i class="fa-regular fa-heart btn-favorite__heart" role="img"
+                                        aria-label="Coeur"></i>
+                                    <i class="fa fa-heart btn-favorite__heart btn-favorite__heart--filled"
+                                        aria-hidden="true"></i>
                                 </button>
                             </div>
                         </article>
@@ -111,9 +136,12 @@
                                     </h3>
                                     <p class="card__content">Cité Rouge</p>
                                 </div>
-                                <button class="card__favorite btn-favorite" aria-label="Cliquez pour ajouter aux favoris">
-                                    <i class="fa-regular fa-heart btn-favorite__heart" role="img" aria-label="Coeur"></i>
-                                    <i class="fa fa-heart btn-favorite__heart btn-favorite__heart--filled" aria-hidden="true"></i>
+                                <button class="card__favorite btn-favorite"
+                                    aria-label="Cliquez pour ajouter aux favoris">
+                                    <i class="fa-regular fa-heart btn-favorite__heart" role="img"
+                                        aria-label="Coeur"></i>
+                                    <i class="fa fa-heart btn-favorite__heart btn-favorite__heart--filled"
+                                        aria-hidden="true"></i>
                                 </button>
                             </div>
                         </article>
@@ -131,9 +159,12 @@
                                     </h3>
                                     <p class="card__content">Folie-Méricourt</p>
                                 </div>
-                                <button class="card__favorite btn-favorite" aria-label="Cliquez pour ajouter aux favoris">
-                                    <i class="fa-regular fa-heart btn-favorite__heart" role="img" aria-label="Coeur"></i>
-                                    <i class="fa fa-heart btn-favorite__heart btn-favorite__heart--filled" aria-hidden="true"></i>
+                                <button class="card__favorite btn-favorite"
+                                    aria-label="Cliquez pour ajouter aux favoris">
+                                    <i class="fa-regular fa-heart btn-favorite__heart" role="img"
+                                        aria-label="Coeur"></i>
+                                    <i class="fa fa-heart btn-favorite__heart btn-favorite__heart--filled"
+                                        aria-hidden="true"></i>
                                 </button>
                             </div>
                         </article>
@@ -144,7 +175,7 @@
     </main>
     <footer class="footer">
         <div class="container">
-            <img src="./assets/logo/ohmyfood@2x--inverted.svg" class="footer__logo" alt="Logo Ohmyfood" height="17"/>
+            <img src="./assets/logo/ohmyfood@2x--inverted.svg" class="footer__logo" alt="Logo Ohmyfood" height="17" />
             <ul class="footer__list list--unstyled">
                 <li class="footer__item">
                     <a href="#" class="footer__link footer__link--icon">
