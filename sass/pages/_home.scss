@@ -4,10 +4,11 @@
   align-items: center;
   justify-content: center;
   gap: 1rem;
-  padding: 1rem;
+  padding: .75rem 1rem;
   background-color: $surface-level-3;
   color: $text-color-level-2;
-  font-size: 1.125rem;
+  font-size: 1rem;
+  font-weight: 500;
 }
 
 // Hero banner
@@ -19,6 +20,12 @@
   padding: 2.5rem 1.25rem 3.5rem;
   background-color: $surface-level-2;
   text-align: center;
+
+  &__content {
+    margin-bottom: 1rem;
+    color: $text-color-level-3;
+    font-size: 1.125rem;
+  }
 }
 
 // How to
@@ -43,7 +50,7 @@
     margin-left: 0.75rem;
     padding: 1.5rem 1rem 1.5rem 0;
     border-radius: $border-radius;
-    background-color: $surface-level-1;
+    background-color: $surface-level-2;
     box-shadow: $box-shadow;
 
     &--highlighted {
