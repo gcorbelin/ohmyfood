@@ -1,6 +1,7 @@
 .card {
   $this: &;
 
+  position: relative;
   border-radius: $border-radius;
   box-shadow: $box-shadow;
   overflow: hidden;
@@ -34,6 +35,15 @@
 
     &:hover {
       color: $primary-color;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
     }
   }
 
