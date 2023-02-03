@@ -1,219 +1,280 @@
 <!DOCTYPE html>
 <html lang="fr">
-
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <title>Le délice des sens | Menu</title>
 
     <!-- Favicon -->
-    <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/favicon-16x16.png">
-    <link rel="manifest" href="./assets/favicon/site.webmanifest">
-    <link rel="mask-icon" href="./assets/favicon/safari-pinned-tab.svg" color="#9356dc">
-    <link rel="shortcut icon" href="./assets/favicon/favicon.ico">
-    <meta name="msapplication-TileColor" content="#9356dc">
-    <meta name="msapplication-config" content="./assets/favicon/browserconfig.xml">
-    <meta name="theme-color" content="#ffffff">
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./assets/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./assets/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./assets/favicon/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="./assets/favicon/safari-pinned-tab.svg"
+      color="#9356dc"
+    />
+    <link rel="shortcut icon" href="./assets/favicon/favicon.ico" />
+    <meta name="msapplication-TileColor" content="#9356dc" />
+    <meta
+      name="msapplication-config"
+      content="./assets/favicon/browserconfig.xml"
+    />
+    <meta name="theme-color" content="#ffffff" />
     <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Shrikhand&display=swap"
-        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Shrikhand&display=swap"
+      rel="stylesheet"
+    />
     <!-- FontAwesome -->
-    <script src="https://kit.fontawesome.com/86bab40cb3.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/86bab40cb3.js"
+      crossorigin="anonymous"
+    ></script>
     <!-- Custom styles -->
-    <link rel="stylesheet" href="./public/css/prefixed/style.css">
-</head>
+    <link rel="stylesheet" href="./public/css/prefixed/style.css" />
+  </head>
 
-<body>
+  <body>
     <header class="header">
-        <nav aria-label="Retour" class="header__nav">
-            <a href="./index.html" title="Retour à l'accueil" class="header__link">
-                <i class="fa fa-arrow-left" role="img" aria-label="Flèche retour"></i>
-            </a>
-        </nav>
-        <img src="./assets/logo/ohmyfood@2x.svg" height="28" alt="Logo Ohmyfood" class="header__logo">
+      <nav aria-label="Retour" class="header__nav">
+        <a href="./index.html" title="Retour à l'accueil" class="header__link">
+          <i class="fa fa-arrow-left" role="img" aria-label="Flèche retour"></i>
+        </a>
+      </nav>
+      <img
+        src="./assets/logo/ohmyfood@2x.svg"
+        height="28"
+        alt="Logo Ohmyfood"
+        class="header__logo"
+      />
     </header>
     <main>
-        <div class="img-banner">
-            <img src="./assets/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="Poisson cuisiné"
-                class="img-banner__img">
+      <div class="img-banner">
+        <img
+          src="./assets/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
+          alt="Poisson cuisiné"
+          class="img-banner__img"
+        />
+      </div>
+      <section class="menu">
+        <div class="container">
+          <div class="menu__title">
+            <h1 class="display">Le délice des sens</h1>
+            <button
+              class="card__favorite btn-favorite"
+              aria-label="Cliquez pour ajouter aux favoris"
+            >
+              <i
+                class="fa-regular fa-heart btn-favorite__heart"
+                role="img"
+                aria-label="Coeur"
+              ></i>
+              <i
+                class="fa fa-heart btn-favorite__heart btn-favorite__heart--filled"
+                aria-hidden="true"
+              ></i>
+            </button>
+          </div>
         </div>
-        <section class="menu">
-            <div class="container">
-                <div class="menu__title">
-                    <h1 class="display">Le délice des sens</h1>
-                    <button class="card__favorite btn-favorite" aria-label="Cliquez pour ajouter aux favoris">
-                        <i class="fa-regular fa-heart btn-favorite__heart" role="img" aria-label="Coeur"></i>
-                        <i class="fa fa-heart btn-favorite__heart btn-favorite__heart--filled" aria-hidden="true"></i>
-                    </button>
-                </div>
-            </div>
-            <div class="container--alt">
-                <div class="menu__wrapper">
-                    <section class="menu__section">
-                        <h2 class="menu__subtitle">Entrées</h2>
-                        <ul class="menu__list list--unstyled">
-                            <li class="menu__item">
-                                <article class="dish">
-                                    <div class="dish__content">
-                                        <h3 class="dish__title">Tartare de thon</h3>
-                                        <div class="dish__description">Assaisonné au yuzu</div>
-                                    </div>
-                                    <div class="dish__price">25€</div>
-                                    <div class="dish__action" title="Cliquez pour sélectionner">
-                                        <i class="fa fa-check-circle"></i>
-                                    </div>
-                                </article>
-                            </li>
-                            <li class="menu__item">
-                                <article class="dish">
-                                    <div class="dish__content">
-                                        <h3 class="dish__title">Bouchée de homard croustillant</h3>
-                                        <div class="dish__description">Et sa farandole de petits légumes</div>
-                                    </div>
-                                    <div class="dish__price">35€</div>
-                                    <div class="dish__action" title="Cliquez pour sélectionner">
-                                        <i class="fa fa-check-circle"></i>
-                                    </div>
-                                </article>
-                            </li>
-                            <li class="menu__item">
-                                <article class="dish">
-                                    <div class="dish__content">
-                                        <h3 class="dish__title">Velouté de cèpes</h3>
-                                        <div class="dish__description">Aux truffes</div>
-                                    </div>
-                                    <div class="dish__price">20€</div>
-                                    <div class="dish__action" title="Cliquez pour sélectionner">
-                                        <i class="fa fa-check-circle"></i>
-                                    </div>
-                                </article>
-                            </li>
-                        </ul>
-                    </section>
-                    <section class="menu__section">
-                        <h2 class="menu__subtitle">Plats</h2>
-                        <ul class="menu__list list--unstyled">
-                            <li class="menu__item">
-                                <article class="dish">
-                                    <div class="dish__content">
-                                        <h3 class="dish__title">Poulet rôti aux herbes de Provence</h3>
-                                        <div class="dish__description">Et sa crème de truffe</div>
-                                    </div>
-                                    <div class="dish__price">40€</div>
-                                    <div class="dish__action" title="Cliquez pour sélectionner">
-                                        <i class="fa fa-check-circle"></i>
-                                    </div>
-                                </article>
-                            </li>
-                            <li class="menu__item">
-                                <article class="dish">
-                                    <div class="dish__content">
-                                        <h3 class="dish__title">Langouste rôtie</h3>
-                                        <div class="dish__description">Et ses légumes de saison</div>
-                                    </div>
-                                    <div class="dish__price">35€</div>
-                                    <div class="dish__action" title="Cliquez pour sélectionner">
-                                        <i class="fa fa-check-circle"></i>
-                                    </div>
-                                </article>
-                            </li>
-                            <li class="menu__item">
-                                <article class="dish">
-                                    <div class="dish__content">
-                                        <h3 class="dish__title">Côte de boeuf Angus</h3>
-                                        <div class="dish__description">Et sa purée de panais</div>
-                                    </div>
-                                    <div class="dish__price">44€</div>
-                                    <div class="dish__action" title="Cliquez pour sélectionner">
-                                        <i class="fa fa-check-circle"></i>
-                                    </div>
-                                </article>
-                            </li>
-                        </ul>
-                    </section>
-                    <section class="menu__section">
-                        <h2 class="menu__subtitle">Desserts</h2>
-                        <ul class="menu__list list--unstyled">
-                            <li class="menu__item">
-                                <article class="dish">
-                                    <div class="dish__content">
-                                        <h3 class="dish__title">Farandole de desserts</h3>
-                                        <div class="dish__description">Du chef</div>
-                                    </div>
-                                    <div class="dish__price">22€</div>
-                                    <div class="dish__action" title="Cliquez pour sélectionner">
-                                        <i class="fa fa-check-circle"></i>
-                                    </div>
-                                </article>
-                            </li>
-                            <li class="menu__item">
-                                <article class="dish">
-                                    <div class="dish__content">
-                                        <h3 class="dish__title">Crème brulée</h3>
-                                        <div class="dish__description">Revisitée</div>
-                                    </div>
-                                    <div class="dish__price">23€</div>
-                                    <div class="dish__action" title="Cliquez pour sélectionner">
-                                        <i class="fa fa-check-circle"></i>
-                                    </div>
-                                </article>
-                            </li>
-                            <li class="menu__item">
-                                <article class="dish">
-                                    <div class="dish__content">
-                                        <h3 class="dish__title">Tiramisu</h3>
-                                        <div class="dish__description">À la noisette</div>
-                                    </div>
-                                    <div class="dish__price">18€</div>
-                                    <div class="dish__action" title="Cliquez pour sélectionner">
-                                        <i class="fa fa-check-circle"></i>
-                                    </div>
-                                </article>
-                            </li>
-                        </ul>
-                    </section>
-                </div>
-                <div class="menu__order">
-                    <a href="#" class="btn" role="button">Commander</a>
-                </div>
-            </div>
-        </section>
+        <div class="container--alt">
+          <div class="menu__wrapper">
+            <section class="menu__section">
+              <h2 class="menu__subtitle">Entrées</h2>
+              <ul class="menu__list list--unstyled">
+                <li class="menu__item">
+                  <article class="dish">
+                    <div class="dish__content">
+                      <h3 class="dish__title">Tartare de thon</h3>
+                      <div class="dish__description">Assaisonné au yuzu</div>
+                    </div>
+                    <div class="dish__price">25€</div>
+                    <div class="dish__action" title="Cliquez pour sélectionner">
+                      <i class="fa fa-check-circle"></i>
+                    </div>
+                  </article>
+                </li>
+                <li class="menu__item">
+                  <article class="dish">
+                    <div class="dish__content">
+                      <h3 class="dish__title">
+                        Bouchée de homard croustillant
+                      </h3>
+                      <div class="dish__description">
+                        Et sa farandole de petits légumes
+                      </div>
+                    </div>
+                    <div class="dish__price">35€</div>
+                    <div class="dish__action" title="Cliquez pour sélectionner">
+                      <i class="fa fa-check-circle"></i>
+                    </div>
+                  </article>
+                </li>
+                <li class="menu__item">
+                  <article class="dish">
+                    <div class="dish__content">
+                      <h3 class="dish__title">Velouté de cèpes</h3>
+                      <div class="dish__description">Aux truffes</div>
+                    </div>
+                    <div class="dish__price">20€</div>
+                    <div class="dish__action" title="Cliquez pour sélectionner">
+                      <i class="fa fa-check-circle"></i>
+                    </div>
+                  </article>
+                </li>
+              </ul>
+            </section>
+            <section class="menu__section">
+              <h2 class="menu__subtitle">Plats</h2>
+              <ul class="menu__list list--unstyled">
+                <li class="menu__item">
+                  <article class="dish">
+                    <div class="dish__content">
+                      <h3 class="dish__title">
+                        Poulet rôti aux herbes de Provence
+                      </h3>
+                      <div class="dish__description">Et sa crème de truffe</div>
+                    </div>
+                    <div class="dish__price">40€</div>
+                    <div class="dish__action" title="Cliquez pour sélectionner">
+                      <i class="fa fa-check-circle"></i>
+                    </div>
+                  </article>
+                </li>
+                <li class="menu__item">
+                  <article class="dish">
+                    <div class="dish__content">
+                      <h3 class="dish__title">Langouste rôtie</h3>
+                      <div class="dish__description">
+                        Et ses légumes de saison
+                      </div>
+                    </div>
+                    <div class="dish__price">35€</div>
+                    <div class="dish__action" title="Cliquez pour sélectionner">
+                      <i class="fa fa-check-circle"></i>
+                    </div>
+                  </article>
+                </li>
+                <li class="menu__item">
+                  <article class="dish">
+                    <div class="dish__content">
+                      <h3 class="dish__title">Côte de boeuf Angus</h3>
+                      <div class="dish__description">Et sa purée de panais</div>
+                    </div>
+                    <div class="dish__price">44€</div>
+                    <div class="dish__action" title="Cliquez pour sélectionner">
+                      <i class="fa fa-check-circle"></i>
+                    </div>
+                  </article>
+                </li>
+              </ul>
+            </section>
+            <section class="menu__section">
+              <h2 class="menu__subtitle">Desserts</h2>
+              <ul class="menu__list list--unstyled">
+                <li class="menu__item">
+                  <article class="dish">
+                    <div class="dish__content">
+                      <h3 class="dish__title">Farandole de desserts</h3>
+                      <div class="dish__description">Du chef</div>
+                    </div>
+                    <div class="dish__price">22€</div>
+                    <div class="dish__action" title="Cliquez pour sélectionner">
+                      <i class="fa fa-check-circle"></i>
+                    </div>
+                  </article>
+                </li>
+                <li class="menu__item">
+                  <article class="dish">
+                    <div class="dish__content">
+                      <h3 class="dish__title">Crème brulée</h3>
+                      <div class="dish__description">Revisitée</div>
+                    </div>
+                    <div class="dish__price">23€</div>
+                    <div class="dish__action" title="Cliquez pour sélectionner">
+                      <i class="fa fa-check-circle"></i>
+                    </div>
+                  </article>
+                </li>
+                <li class="menu__item">
+                  <article class="dish">
+                    <div class="dish__content">
+                      <h3 class="dish__title">Tiramisu</h3>
+                      <div class="dish__description">À la noisette</div>
+                    </div>
+                    <div class="dish__price">18€</div>
+                    <div class="dish__action" title="Cliquez pour sélectionner">
+                      <i class="fa fa-check-circle"></i>
+                    </div>
+                  </article>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="menu__order">
+            <a href="#" class="btn" role="button">Commander</a>
+          </div>
+        </div>
+      </section>
     </main>
     <footer class="footer">
-        <div class="container">
-            <img src="./assets/logo/ohmyfood@2x--inverted.svg" class="footer__logo" alt="Logo Ohmyfood" height="17">
-            <ul class="footer__list list--unstyled">
-                <li class="footer__item">
-                    <a href="#" class="footer__link footer__link--icon">
-                        <i class="fa fa-utensils footer__link__icon" aria-hidden="true"></i>
-                        <span class="footer__link__content">Proposer un restaurant</span>
-                    </a>
-                </li>
-                <li class="footer__item">
-                    <a href="#" class="footer__link footer__link--icon">
-                        <i class="fa fa-handshake-angle footer__link__icon" aria-hidden="true"></i>
-                        <span class="footer__link__content">Devenir partenaire</span>
-                    </a>
-                </li>
-                <li class="footer__item">
-                    <a href="#" class="footer__link">
-                        <span class="footer__link__content">Mentions légales</span>
-                    </a>
-                </li>
-                <li class="footer__item">
-                    <a href="#" class="footer__link">
-                        <span class="footer__link__content">Contact</span>
-                    </a>
-                </li>
-            </ul>
-        </div>
+      <div class="container">
+        <img
+          src="./assets/logo/ohmyfood@2x--inverted.svg"
+          class="footer__logo"
+          alt="Logo Ohmyfood"
+          height="17"
+        />
+        <ul class="footer__list list--unstyled">
+          <li class="footer__item">
+            <a href="#" class="footer__link footer__link--icon">
+              <i
+                class="fa fa-utensils footer__link__icon"
+                aria-hidden="true"
+              ></i>
+              <span class="footer__link__content">Proposer un restaurant</span>
+            </a>
+          </li>
+          <li class="footer__item">
+            <a href="#" class="footer__link footer__link--icon">
+              <i
+                class="fa fa-handshake-angle footer__link__icon"
+                aria-hidden="true"
+              ></i>
+              <span class="footer__link__content">Devenir partenaire</span>
+            </a>
+          </li>
+          <li class="footer__item">
+            <a href="#" class="footer__link">
+              <span class="footer__link__content">Mentions légales</span>
+            </a>
+          </li>
+          <li class="footer__item">
+            <a href="mailto:gcorbelin@gmail.com" class="footer__link">
+              <span class="footer__link__content">Contact</span>
+            </a>
+          </li>
+        </ul>
+      </div>
     </footer>
-</body>
-
+  </body>
 </html>
