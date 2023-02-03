@@ -6,11 +6,12 @@
   box-shadow: $box-shadow;
   color: $text-color-level-4;
   font-weight: 700;
-  transition: background-color 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 
   &:hover,
   &:focus {
-    background-color: $primary-color;
+    @include bg-gradient($secondary-color, $secondary-color);
+    box-shadow: $box-shadow-lg;
   }
 }
 
