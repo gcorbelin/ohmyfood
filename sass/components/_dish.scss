@@ -54,9 +54,18 @@
     font-size: 1.25rem;
     transition: left 0.5s ease-in-out;
 
+    i {
+      transform: rotate(0);
+    }
+
     #{$self}:hover &,
     #{$self}:focus-within & {
       left: calc(100% - 60px);
+
+      i {
+        transform: rotate(360deg);
+        transition: transform 0.5s ease-in-out;
+      }
     }
   }
 }
